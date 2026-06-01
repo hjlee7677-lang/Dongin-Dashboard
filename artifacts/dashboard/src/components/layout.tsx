@@ -1,5 +1,6 @@
 import { Link } from "wouter";
-import { LayoutDashboard, Plus, Settings } from "lucide-react";
+import { Plus } from "lucide-react";
+import logoSrc from "@assets/동인고_마크_파랑_투명배경_(1)_1780355951132.png";
 
 export function Layout({ children }: { children: React.ReactNode }) {
   return (
@@ -7,9 +8,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
       <header className="sticky top-0 z-30 border-b bg-card">
         <div className="flex h-14 items-center px-6 gap-4">
           <Link href="/" className="font-semibold text-lg flex items-center gap-2">
-            <div className="w-8 h-8 bg-primary text-primary-foreground rounded flex items-center justify-center">
-              <LayoutDashboard className="w-5 h-5" />
-            </div>
+            <img src={logoSrc} alt="동인고등학교 마크" className="h-8 w-auto" />
             동인고 업무 대시보드
           </Link>
           <div className="ml-auto flex items-center space-x-4">
